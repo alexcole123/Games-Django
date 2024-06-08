@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Gaming | Weather
+{% endblock title %}
+
+{% block content %}
+<div class="card w-25 mx-auto m-5">
+    <h2>Weather in Israel</h2>
+    <img src="http://openweathermap.org/img/wn/{{ icon_code }}.png" alt="Weather Icon" class="weatherIcon">
+    <h4>Description: {{ description }}</h4>
+    <h4>Temperature: {{ temperature }}</h4>
+</div>
+{% endblock content %}

@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "9ff81154-7622-4f05-8d09-29b30fc9d484",
+		"name": "Games Rest Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33475486"
+	},
+	"item": [
+		{
+			"name": "Get all products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/products",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get one product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/products/3",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"products",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Pool\",\n    \"price\": \"125.00\",\n    \"stock\": 50,\n    \"release_date\": \"2024-01-06\",\n    \"category\": 4\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/products/new",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"products",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Fast Racing Car\",\n    \"price\": \"155.00\",\n    \"stock\": 50,\n    \"release_date\": \"2024-01-06\",\n    \"category\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/products/edit/3",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"products",
+						"edit",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/products/delete/17",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"products",
+						"delete",
+						"17"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
